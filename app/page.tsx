@@ -9,15 +9,15 @@ import Technologies from "@/components/Technologies";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, Ref } from "react";
 import CustomCursor from "@/components/CustomCursor";
 import vanillaCursor from "../assets/cursorIcon.png";
 import customCursor from "../assets/customCursorIcon.png";
 import { gsap } from "gsap";
 export default function Home() {
     // GSAP
-    const h1Ref = useRef();
-    const headerBtnRef = useRef();
+    const h1Ref: any = useRef();
+    const headerBtnRef: any = useRef();
     useEffect(() => {
         gsap.fromTo(
             h1Ref.current,
