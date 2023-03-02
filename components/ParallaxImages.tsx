@@ -7,7 +7,7 @@ import img6 from "../assets/headerImages/img6.webp";
 import Image from "next/image";
 import { useRef, useEffect } from "react";
 function ParallaxImages() {
-    const imgRefs = {
+    const imgRefs:any = {
         r1: useRef(),
         r2: useRef(),
         r3: useRef(),
